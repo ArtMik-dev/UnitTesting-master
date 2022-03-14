@@ -22,17 +22,4 @@ class VirtualItemTest {
 
         assertEquals(actualSizeOn, expectedSizeOn, 0);
     }
-
-
-    @Test
-    void stringRepresentationTest() {
-        String expectedName = "name";
-        double expectedSize = 200;
-
-        virtualItem.setName(expectedName);
-        virtualItem.setSizeOnDisk(expectedSize);
-
-        String expectedString = String.format("Class: class shop.VirtualItem; Name: %s; Price: %s; Size on disk: %s", expectedName, 0.0, expectedSize);
-        assertEquals(expectedString, virtualItem.toString());
-    }
 }
